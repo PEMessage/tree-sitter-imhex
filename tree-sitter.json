@@ -1,0 +1,44 @@
+{
+  "$schema": "https://tree-sitter.github.io/tree-sitter/assets/schemas/config.schema.json",
+  "grammars": [
+    {
+      "name": "imhex",
+      "camelcase": "Imhex",
+      "title": "Imhex",
+      "scope": "source.imhex",
+      "file-types": [
+        "imhex",
+        "hexpat"
+      ],
+      "injection-regex": "^imhex$",
+      "class-name": "TreeSitterImhex",
+      "highlights": "queries/highlights.scm"
+    }
+  ],
+  "metadata": {
+    "version": "0.1.0",
+    "license": "MIT",
+    "description": "Imhex grammar for tree-sitter",
+    "authors": [
+      {
+        "name": "Daniel-Esteban",
+        "email": "dani.este.bri@gmail.com",
+        "url": ""
+      }
+    ],
+    "links": {
+      "repository": "https://github.com/tree-sitter/tree-sitter-imhex",
+      "funding": ""
+    }
+  },
+  "bindings": {
+    "c": true,
+    "go": true,
+    "java": false,
+    "node": true,
+    "python": true,
+    "rust": true,
+    "swift": true,
+    "zig": false
+  }
+}
